@@ -1,0 +1,61 @@
+body{
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+}
+#movie{
+    font-size: 80px;
+    color: aliceblue;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+#h1{
+    text-align: center;
+    font-size: 100px;
+    color: tomato;
+}
+#parent{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#div{
+    text-align: center;
+    background-color: brown;
+    padding:10px;
+}
+#p4{
+    font-size: 40px;
+    margin-top:0px;
+}
+#p1,#p2,#p3{
+    font-size: large;
+}
+.parent {
+    margin-top: 0px;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;    /* Center vertically */        /* Full viewport height */
+    border: 2px solid rgb(15, 14, 14);
+    color:aliceblue /* Optional: just to visualize the parent */
+}
+
+.centered-elements {
+    text-align: center;      /* Center text within the div */
+    border: 2px solid rgb(146, 26, 26);  /* Optional: to visualize the centered div */
+    padding: 20px;           /* Optional: add some padding */
+}
+#l1{
+    margin-top: 0px;
+    color: tomato;
+}
+#input{
+    width:20px;
+    margin-top: 0px;
+}
+#button{
+    color:rgb(11, 10, 10);
+    background-color: red;
+    
+}

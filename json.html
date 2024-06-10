@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const product2={
+            name:'shirt',
+            deliverytime:'1day',
+            rating:{
+                stars:4.5,
+                count:87
+            },
+            fun: function functio(){
+                console.log('hy');
+            }
+        };
+        console.log(product2.rating);
+        console.log(product2.deliverytime);
+        product2.fun() 
+        const v=JSON.stringify(product2);
+        console.log(typeof (
+        JSON.stringify(product2)));
+        console.log(v);
+        console.log(JSON.parse(v));
+    </script>
+</body>
+</html>

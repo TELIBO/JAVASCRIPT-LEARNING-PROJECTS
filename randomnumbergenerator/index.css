@@ -1,0 +1,19 @@
+body{
+    text-align: center;
+    background-color: black;
+}
+.label{
+    font-size: 150px;
+    color: aliceblue;
+}
+#h1{
+    font-family: verdana;
+    font-size: 80px;
+    color:rgb(230, 14, 47);
+}
+button{
+    padding:10px;
+    background-color: red;
+    color: aliceblue;
+    border-radius:8px;
+}
