@@ -7,10 +7,18 @@
 </head>
 <body style="background-color: black;">
     <div style="height:100vh;display: flex;justify-content: center;align-items: center;flex-direction: column;">
-        <div style="background-color: red;;width:70%;height:50%;border-radius: 17px;font-size: 190px;justify-content: center;display: flex;align-items: center;color:white;" id="clock">
-           
+        <div style="background-color: red;;width:70%;height:50%;border-radius: 17px;font-size: 190px;justify-content: center;display: flex;align-items: center;color:white;" id="clock">   
         </div>
+        <p id="p" style="color:whitesmoke;font-size: 50px;"></p>
     </div>
-    <script src="index.js"></script>
+    <script>   
+        setInterval(function(){
+            const date=new Date();
+            const clock=document.querySelector("#clock");
+            const d=document.querySelector("#p");
+            clock.innerHTML=date.toLocaleTimeString();
+            d.innerHTML=date.toLocaleDateString(undefined,{weekday:"long" ,year: 'numeric', month: 'long', day: 'numeric'});
+        },1000)
+    </script>
 </body>
 </html>
