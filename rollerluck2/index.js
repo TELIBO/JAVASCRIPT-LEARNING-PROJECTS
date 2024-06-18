@@ -32,7 +32,7 @@ button.onclick = function() {
             }
         }
     if(fl===res.length){
-        happy.innerHTML=`<img src="images/happy.jpg">`;
+        happy.innerHTML=`<img style="width:400px;" src="images/happy.jpg">`;
     }
     else{
         happy.innerHTML=null;
