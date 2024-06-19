@@ -6,8 +6,9 @@ let prev = "";
 form.addEventListener("submit", function(e) {
     e.preventDefault();
     const num = document.getElementById("number").value;
-    
-    if (attempt < 2) {
+    attempt -= 1;
+    document.getElementById("attempts").textContent = `${attempt}`;
+    if (attempt < 1) {
         document.getElementById("number").disabled = true;
         document.getElementById("result").textContent = `YOU LOSE! ANSWER WAS ${random}`;
     } else if (num == random) {
@@ -21,13 +22,12 @@ form.addEventListener("submit", function(e) {
         }
         prev += `|${num}`;
         document.getElementById("previous").textContent = prev;
-        attempt -= 1;
-        document.getElementById("attempts").textContent = `${attempt}`;
     }
 });
 
 document.getElementById("restart").onclick = function() {
     document.getElementById("number").disabled = false;
+    document.getElementById("number").value="";
     random = Math.floor(Math.random() * 100) + 1;
     attempt = 10;
     document.getElementById("attempts").textContent = `${attempt}`;
