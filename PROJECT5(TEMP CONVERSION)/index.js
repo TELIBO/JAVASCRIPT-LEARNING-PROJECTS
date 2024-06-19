@@ -8,6 +8,7 @@ document.getElementById("b1").onclick = function() {
             document.getElementById("emotion").innerHTML = `<img style=" width:400px;height:300px;" src="images/gettyimages-1241852095-612x612.jpg">`;
         } else if (val > 20 && val < 40) {
             emotion = "it's normal";
+            document.getElementById("emotion").innerHTML = ``;
         } else {
             emotion = "it's getting cold";
             document.getElementById("emotion").innerHTML = `<img style=" width:400px;height:300px;" src="images/2608971.jpg">`;
