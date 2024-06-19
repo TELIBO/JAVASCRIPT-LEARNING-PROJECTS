@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECT 11</title>
+    <style>
+        th,td{
+            border-style: solid;
+        }
+        table{
+            border-collapse: collapse;
+            width:80%;
+            color:white;
+            border-color:white;
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body style="background-color: black;">
+    <h1 style="color:white;text-align: center;">CHECK YOUR KEYBOARD IS WORKING OR NOT</h1>
+    <div style="display: flex;flex-direction: column;justify-content: center;align-items: center;">
+        <div id="input" style="height:60vh;width:60vw;display: flex;flex-direction: column;justify-content: center;align-items: center;color: aliceblue;font-size: 50px;">PRESS KEY TO SEE MAGIC</div>
+    </div>
+    <script>
+        window.addEventListener("keydown",function(e){
+            document.getElementById("input").innerHTML=`
+            <table style=" border-collapse=collapse;border-style:solid;">
+                <tr>
+                    <th>KEY</th>
+                    <th>CODE</th>
+                    <th>NAME</th>
+                </tr>
+                <tr>
+                    <th>${e.key}</th>
+                    <th>${e.keyCode}</th>
+                    <th>${e.code}</th>
+                </tr>
+            </table>
+            `
+        })
+    </script>
+</body>
+</html>
