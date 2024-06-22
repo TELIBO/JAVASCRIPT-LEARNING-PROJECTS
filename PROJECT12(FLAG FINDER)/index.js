@@ -18,9 +18,9 @@ function fetchFlag() {
             return response.json();
         })
         .then(data => {
-            console.log(data);
             const countries = data.reduce((acc, country) => {
-                console.log(country);
+                if(country.name.common.toLowerCase().includes(countryName))
+                console.log(country)
                 acc[country.name.common.toLowerCase()] = country;
                 return acc;
             }, {});
