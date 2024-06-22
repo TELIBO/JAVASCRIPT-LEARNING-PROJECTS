@@ -1,0 +1,37 @@
+{
+    "location": {
+      "city": "San Francisco",
+      "state": "CA",
+      "country": "USA"
+    },
+    "forecast": [
+      {
+        "date": "2024-06-21",
+        "temperature": {
+          "high": 68,
+          "low": 55
+        },
+        "conditions": "Partly Cloudy",
+        "precipitation": 10
+      },
+      {
+        "date": "2024-06-22",
+        "temperature": {
+          "high": 70,
+          "low": 56
+        },
+        "conditions": "Sunny",
+        "precipitation": 0
+      },
+      {
+        "date": "2024-06-23",
+        "temperature": {
+          "high": 72,
+          "low": 57
+        },
+        "conditions": "Cloudy",
+        "precipitation": 20
+      }
+    ]
+  }
+  
