@@ -31,5 +31,9 @@ button{
 .images{
     display: flex;
     flex-direction: row;
-    transition:0.9s;
+}
+.ong{
+    display: flex;
+    flex-direction: row;
+    transition:0s;
 }
