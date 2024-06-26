@@ -1,0 +1,35 @@
+.slides{
+    width:800px;
+    height:500px;
+    display:flex;
+    flex-direction: row;
+    position: relative;
+    overflow: hidden;
+}
+.slide{
+    width:800px;
+    height:500px;
+    z-index: 10;
+    size:cover;
+}
+.slider{
+    display:flex;
+    flex-direction:row ;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+body{
+    background-color: black;
+}
+button{
+    padding:20px;
+    background-color: aliceblue;
+    color:black;
+    z-index: 20px;
+}
+.images{
+    display: flex;
+    flex-direction: row;
+    transition:0.9s;
+}
